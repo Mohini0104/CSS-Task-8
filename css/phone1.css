@@ -1,0 +1,39 @@
+*{
+    margin: 2px;
+}
+#navbar{
+    flex-direction: column;
+    margin-top: -30px;
+}
+
+#navbar ul li a{
+    font-size:1rem;
+    padding:0px 8px 3px 3px;
+    padding-bottom: 65px;
+}
+
+
+
+/* home section */
+#home{
+    height:300px;
+    padding:3px68px;
+}
+
+#home ::before{
+    height:530px;
+    }
+#home p{
+    font-size:13px;
+    height: 115px;
+}
+
+.box img{
+    width: 400px;
+    margin-left: 80px;
+}
+/* __________ */
+.btn1{
+    padding: -1px 2px;
+    margin: 20px 30px 22px 98px;
+}

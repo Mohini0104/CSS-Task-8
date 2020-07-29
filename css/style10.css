@@ -1,0 +1,218 @@
+/* ____________________________________________________ */
+/* font-family: 'Krona One', sans-serif;
+font-family: 'Red Rose', cursive;
+font-family: 'Roboto Mono', monospace; */
+
+
+
+/* __________________________CSS Reset____________________________________ */
+*{
+    margin: 0px;
+    padding: 0px;}
+/* ________________________________NavBar__________________________ */
+#navbar{
+    display: flex;
+    margin-top: 10px;
+    font-family:  'Roboto Mono', monospace;
+}
+
+/* _______________________________Logo Image__________________________ */
+.logo_img{
+   width: 45px;
+   margin-left: 20px;
+}
+/* _______________________________NavBar Items_____________________ */
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+#navbar::before{
+    content: "";
+    background-color: gray;
+    position:absolute;
+    top:0px;
+    left: 0px;
+    
+    height: 10%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#navbar ul li {
+    
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color:white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+   background-color: white;
+   
+}
+#home{
+    flex-direction: column;
+    display: flex;
+    height: 360px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellow; */
+    padding-top: 40px;
+}
+#home::before{
+    content: "";
+    background: url(img/img2.jpg) no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: .83;
+
+}
+#home h2{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    animation: heading 3s steps(14)  infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid white;
+    width: 16;
+}
+@keyframes heading{
+   
+        0%{
+            width:0ch
+        }
+        50%{
+          width: 8ch;
+        }
+        100%{
+         width: 14ch;
+        }
+    }
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 150px;
+    font-family: 'Red Rose', cursive;
+   
+   
+}
+
+/* ______________________Photos___________________ */
+/* #photos{
+    /* border: 2px solid brown;} */
+.box{
+   display: inline-flex;
+   margin-left: 50px;
+   /* border: 2px solid red; */
+  
+}
+.box img{
+    width: 400px;
+    margin-left: 20px;
+}
+
+/* ______________contact section_________________ */
+
+
+#signup h2{
+    
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: 'Roboto Mono', monospace;
+    animation: heading1 5s steps(14)  infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid white;
+    width: 16;
+}
+@keyframes heading1{
+   
+    0%{
+        width:0ch
+    }
+    50%{
+      width: 8ch;
+    }
+    100%{
+     width: 45ch;
+    }
+}
+
+#contact{
+    position: relative;
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(image/sd2.jpeg) no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+.btn1{
+    padding: 6px 20px;
+    border: 2px solid white;
+    justify-content: center;
+    
+    color:white;
+    background: #29295b;
+    margin: 12px 21px 12px 200px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    
+
+}
+
